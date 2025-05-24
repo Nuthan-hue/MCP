@@ -1,0 +1,39 @@
+{
+  "mcp_version": "0.1.0",
+  "model_identification": {
+    "model_name": "SimpleDoublerModel",
+    "model_version": "1.0.0",
+    "model_type": "hardcoded_rule",
+    "model_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef"
+  },
+  "environment": {
+    "python_version": "3.9.13",
+    "dependencies": [
+      {"name": "numpy", "version": "1.24.4"},
+      {"name": "scipy", "version": "1.10.1"}
+    ],
+    "hardware_requirements": "CPU"
+  },
+  "data_context": {
+    "input_schema": {
+      "type": "float",
+      "description": "A single numerical input value."
+    },
+    "output_schema": {
+      "type": "float",
+      "description": "A single numerical output value."
+    },
+    "training_data_source": "N/A (rule-based model)",
+    "preprocessing_steps": "None"
+  },
+  "usage_context": {
+    "entry_point": "simple_model.py::predict",
+    "expected_runtime": "Python 3.9.x interpreter"
+  },
+  "metadata": {
+    "author": "Nuthan Kishore Maddineni",
+    "creation_date": "2025-05-24",
+    "license": "MIT",
+    "description": "This MCP describes a simple Python model that doubles its input. It's designed as a learning example for the Model Context Protocol."
+  }
+}
