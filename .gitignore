@@ -1,0 +1,6 @@
+__pycache__/
+token.json
+credentials.json
+credentials2.json
+.env
+gemini_api_key.txt
